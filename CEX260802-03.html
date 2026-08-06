@@ -29,21 +29,64 @@ body {
     box-shadow: 0 4px 18px rgba(0,0,0,0.15);
 }
 
-.header {
-    background: #1f4e78;
-    color: white;
-    text-align: center;
-    padding: 22px 15px;
+.header{
+
+    background:#1F4E78;
+    color:#fff;
+
+    display:flex;
+    align-items:center;
+
+    padding:12px 15px;
+
+.headerLeft{
+
+    width:120px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
 }
 
-.header h1 {
-    margin: 0;
-    font-size: 26px;
+.headerRight{
+
+    flex:1;
+
+    text-align:center;
+
+    padding-right:70px;
+
 }
 
-.header p {
-    margin: 7px 0 0;
-    font-size: 15px;
+.logo{
+
+    width:80px;
+
+    background:#fff;
+
+    padding:6px;
+
+    border-radius:8px;
+
+}
+
+}
+
+.header h1{
+
+    margin:0;
+    font-size:18px;
+    line-height:1.2;
+
+}
+
+.header p{
+
+    margin-top:4px;
+    font-size:11px;
+    line-height:1.2;
+
 }
 
 .section-title {
@@ -90,12 +133,46 @@ body {
     color: #003d80;
 }
 
-.footer {
-    text-align: center;
-    padding: 16px;
-    background: #f5f5f5;
-    font-size: 13px;
-    color: #666;
+.footer{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:16px;
+
+    background:#f5f5f5;
+
+    font-size:13px;
+
+    color:#666;
+
+}
+
+.footerLeft{
+
+    width:30%;
+
+    text-align:left;
+
+}
+
+.footerCenter{
+
+    width:40%;
+
+    text-align:center;
+
+}
+
+.footerRight{
+
+    width:30%;
+
+    text-align:right;
+
 }
 
 @media (max-width: 500px) {
@@ -122,6 +199,25 @@ body {
 
     .value {
         margin-top: 5px;
+
+	.footer{
+
+    flex-direction:column;
+
+    gap:12px;
+
+}
+
+.footerLeft,
+.footerCenter,
+.footerRight{
+
+    width:100%;
+
+    text-align:center;
+
+}
+
     }
 }
 </style>
@@ -133,9 +229,24 @@ body {
 <div class="container">
 
     <div class="header">
-        <h1>Metal Mech Engineering</h1>
-        <p>Material Traceability Details / Documents</p>
+
+    <div class="headerLeft">
+
+        <img src="https://raw.githubusercontent.com/jitusakhra-art/Logo/main/company_logo.png.png"
+             class="logo"
+             alt="MetalMech Engineering">
+
     </div>
+
+    <div class="headerRight">
+
+        <h1>Metal Mech Engineering</h1>
+
+        <p>Material Traceability Details / Documents</p>
+
+    </div>
+
+</div>
 
     <div class="section-title">
         CSN-Details
@@ -199,10 +310,33 @@ body {
 
     </div>
 
-    <div class="footer">
-        Metal Mech Engineering<br>
-        Material Traceability System
+   <div class="footer">
+
+    <div class="footerLeft">
+
+        <b>Prepared By</b><br>
+
+        Jitu Gadhvi
+
     </div>
+
+    <div class="footerCenter">
+
+        <b>Metal Mech Engineering</b><br>
+
+        Material Traceability System
+
+    </div>
+
+    <div class="footerRight">
+
+        <b>Approved By</b><br>
+
+        ABC XYZ
+
+    </div>
+
+</div>
 
 </div>
 
